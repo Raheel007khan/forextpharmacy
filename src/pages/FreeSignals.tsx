@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, TrendingUp, TrendingDown, Clock, Target, DollarSign } from "lucide-react";
+import { ArrowLeft, TrendingUp, TrendingDown, Clock, Target, DollarSign, ImageIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const FreeSignals = () => {
@@ -16,7 +16,8 @@ const FreeSignals = () => {
       sl: "2015.00",
       status: "Active",
       time: "2 hours ago",
-      profit: null
+      profit: null,
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=200&fit=crop&crop=center"
     },
     {
       id: 2,
@@ -40,7 +41,8 @@ const FreeSignals = () => {
       sl: "77.50",
       status: "Closed",
       time: "2 days ago",
-      profit: "+80 pips"
+      profit: "+80 pips",
+      image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&h=200&fit=crop&crop=center"
     },
     {
       id: 4,
@@ -176,6 +178,20 @@ const FreeSignals = () => {
                         {signal.status}
                       </Badge>
                     </div>
+
+                    {/* Signal Image */}
+                    {(signal as any).image && (
+                      <div className="lg:order-first">
+                        <div className="relative w-full lg:w-32 h-20 rounded-lg overflow-hidden border border-border/50">
+                          <img 
+                            src={(signal as any).image} 
+                            alt={`${signal.pair} chart analysis`}
+                            className="w-full h-full object-cover"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                      </div>
+                    )}
 
                     {/* Signal Details */}
                     <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 text-sm">
