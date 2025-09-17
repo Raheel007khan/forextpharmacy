@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, DollarSign } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-trading.jpg";
 
 const Hero = () => {
@@ -60,9 +61,11 @@ const Hero = () => {
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
-            <Button variant="premium" size="hero">
-              <DollarSign className="mr-2 w-5 h-5" />
-              View Free Signals
+            <Button variant="premium" size="hero" asChild>
+              <Link to="/free-signals">
+                <DollarSign className="mr-2 w-5 h-5" />
+                View Free Signals
+              </Link>
             </Button>
           </div>
 
