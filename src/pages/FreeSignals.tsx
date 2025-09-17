@@ -25,7 +25,7 @@ const FreeSignals = () => {
       // Option 1: Use imported image - image: customChart1
       // Option 2: Use direct URL
      // image: "src/assets/XAUUSD_2025-09-15_16-16-48.png"
-      import myChart from "@/src/assets/XAUUSD_2025-09-15_16-16-48.png"
+      import myChart from "@/assets/XAUUSD_2025-09-15_16-16-48.png"
     },
     {
       id: 2,
