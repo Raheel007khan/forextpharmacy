@@ -4,6 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, TrendingUp, TrendingDown, Clock, Target, DollarSign, ImageIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
+// Import your custom images here
+// import customChart1 from "@/assets/my-chart1.jpg";
+// import customChart2 from "@/assets/my-chart2.png";
+// etc...
+
 const FreeSignals = () => {
   const freeSignals = [
     {
@@ -17,6 +22,8 @@ const FreeSignals = () => {
       status: "Active",
       time: "2 hours ago",
       profit: null,
+      // Option 1: Use imported image - image: customChart1
+      // Option 2: Use direct URL
       image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=200&fit=crop&crop=center"
     },
     {
@@ -30,6 +37,7 @@ const FreeSignals = () => {
       status: "Closed",
       time: "1 day ago",
       profit: "+45 pips"
+      // No image for this signal
     },
     {
       id: 3,
@@ -42,6 +50,8 @@ const FreeSignals = () => {
       status: "Closed",
       time: "2 days ago",
       profit: "+80 pips",
+      // Option 1: Use imported image - image: customChart2
+      // Option 2: Use direct URL  
       image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&h=200&fit=crop&crop=center"
     },
     {
@@ -55,6 +65,7 @@ const FreeSignals = () => {
       status: "Stopped",
       time: "3 days ago",
       profit: "-30 pips"
+      // No image for this signal
     }
   ];
 
