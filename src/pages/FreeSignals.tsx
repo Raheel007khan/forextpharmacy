@@ -24,7 +24,7 @@ const FreeSignals = () => {
       profit: null,
       // Option 1: Use imported image - image: customChart1
       // Option 2: Use direct URL
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=200&fit=crop&crop=center"
+      image: "src/assets/XAUUSD_2025-09-15_16-16-48.png"
     },
     {
       id: 2,
