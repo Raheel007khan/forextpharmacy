@@ -28,7 +28,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight">
-              Elite <span className="text-gold">Forex</span> Signals
+              MRK <span className="text-gold">Traders</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed">
