@@ -194,13 +194,18 @@ const FreeSignals = () => {
                     {/* Signal Image */}
                     {(signal as any).image && (
                       <div className="lg:order-first">
-                        <div className="relative w-full lg:w-32 h-20 rounded-lg overflow-hidden border border-border/50">
+                        <div className="relative w-full lg:w-48 h-32 lg:h-28 rounded-lg overflow-hidden border border-border/50 bg-card/30">
                           <img 
                             src={(signal as any).image} 
                             alt={`${signal.pair} chart analysis`}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain hover:object-cover transition-all duration-300 cursor-pointer"
+                            onClick={() => window.open((signal as any).image, '_blank')}
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none"></div>
+                          <div className="absolute top-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded backdrop-blur-sm">
+                            <ImageIcon className="w-3 h-3 inline mr-1" />
+                            Chart
+                          </div>
                         </div>
                       </div>
                     )}
