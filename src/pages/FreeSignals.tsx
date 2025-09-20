@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 // import customChart1 from "@/assets/my-chart1.jpg";
 // import customChart2 from "@/assets/my-chart2.png";
 // etc...
+import myChart from "@/assets/XAUUSD_2025-09-15_16-16-48.png";
 
 const FreeSignals = () => {
   const freeSignals = [
@@ -24,8 +25,7 @@ const FreeSignals = () => {
       profit: null,
       // Option 1: Use imported image - image: customChart1
       // Option 2: Use direct URL
-     // image: "src/assets/XAUUSD_2025-09-15_16-16-48.png"
-      import myChart from "@/assets/XAUUSD_2025-09-15_16-16-48.png"
+      image: myChart
     },
     {
       id: 2,
