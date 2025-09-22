@@ -22,7 +22,7 @@ const FreeSignals = () => {
       sl: "3698.00",
       status: "Active",
       time: "2 hours ago",
-      profit: null,
+      profit: "+200 pips",
       // Option 1: Use imported image - image: customChart1
       // Option 2: Use direct URL
       image: myChart
