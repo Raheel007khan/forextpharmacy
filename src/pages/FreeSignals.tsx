@@ -20,7 +20,7 @@ const FreeSignals = () => {
       tp1: "3713.00",
       tp2: "3723.00",
       sl: "3698.00",
-      status: "Active",
+      status: "Closed",
       time: "2 hours ago",
       profit: "+200 pips",
       // Option 1: Use imported image - image: customChart1
