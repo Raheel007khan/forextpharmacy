@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 // import customChart1 from "@/assets/my-chart1.jpg";
 // import customChart2 from "@/assets/my-chart2.png";
 // etc...
-import myChart from "@/assets/XAUUSD_2025-09-15_16-16-48.png";
+import myChart from "@/assets/GOLD_2025-09-22_14-00-58.png";
 
 const FreeSignals = () => {
   const freeSignals = [
@@ -16,10 +16,10 @@ const FreeSignals = () => {
       id: 1,
       pair: "XAUUSD",
       type: "BUY",
-      entry: "2020.50",
-      tp1: "2025.00",
-      tp2: "2030.00",
-      sl: "2015.00",
+      entry: "3703.00",
+      tp1: "3713.00",
+      tp2: "3723.00",
+      sl: "3698.00",
       status: "Active",
       time: "2 hours ago",
       profit: null,
