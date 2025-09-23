@@ -56,9 +56,11 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button variant="gold" size="hero" className="group">
-              Get Premium Signals
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <Button variant="gold" size="hero" className="group" asChild>
+              <Link to="/gold-signals">
+                Get Gold Signals
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
             
             <Button variant="premium" size="hero" asChild>
